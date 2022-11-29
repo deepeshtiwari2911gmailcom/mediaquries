@@ -21,16 +21,23 @@ section{
 @media  screen and (min-width : 768px) and (max-width:991px ) {
     .response{
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .box{
         background-color: darkseagreen;
     }
-    .section{
-        width:auto
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
     }
-    .para2{
-        display: inline;
+    .para1,.para2{
+        width: 47%;
     }
+    .para3{
+        width: 96%;
+    }
+    
 
 }
 @media screen and (max-width: 767px) {
@@ -39,9 +46,13 @@ section{
         align-items: center;
     }
     section{
-        width: auto;
+        width: 70%;
         margin: 10px;
     }
+    .box{
+        height: auto;
+    }
+
 }
 
 
